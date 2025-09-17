@@ -12,42 +12,9 @@
                 </h1>
                     <p class="mb-0 opacity-75">Lista de propiedades</p>
                 </div>
-                <a href="" class="btn btn-light btn-lg rounded-pill px-4 py-2 shadow-sm hover-lift">
+                <a href="{% url 'crear_propiedad' %}" class="btn btn-light btn-lg rounded-pill px-4 py-2 shadow-sm hover-lift">
                     <i class="fas fa-plus me-2"></i> Nueva propiedad
                 </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Search Section -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card border-0 shadow-sm rounded-4">
-                <div class="card-body p-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fas fa-search text-primary me-2"></i>
-                        <h5 class="mb-0 text-muted">Buscar propiedades</h5>
-                    </div>
-                    <form method="get" class="row g-3">
-                        <div class="col-md-8">
-                            <div class="input-group">
-                                <span class="input-group-text bg-light border-0">
-                                    <i class="fas fa-search text-muted"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex gap-2">
-                                <button type="submit" class="btn btn-primary rounded-pill flex-fill">
-                                    <i class="fas fa-search me-1"></i> Buscar
-                                </button>
-                                <a href="" class="btn btn-outline-secondary rounded-pill flex-fill">
-                                    <i class="fas fa-times me-1"></i> Limpiar
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </div>
@@ -61,7 +28,9 @@
 
                         <!-- Card Body -->
                         <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="card-title fw-bold text-dark mb-3">{{ propiedad.precio }}</h5>
+                            <h5 class="card-title fw-bold text-dark mb-3">Precio: {{ propiedad.precio }}</h5>
+                            <h5 class="card-title fw-bold text-dark mb-3">Direccion: {{ propiedad.direccion }}</h5>
+                            <h5 class="card-title fw-bold text-dark mb-3">Tipo: {{ propiedad.tipo }}</h5>
 
                             <!-- Action Buttons -->
                             <div class="mt-auto">
