@@ -180,22 +180,4 @@
     }
 }
 </style>
-
-<script>
-function showTips() {
-    alert('💡 Consejos para organizarte:\n\n• Crea categorías para diferentes tipos de tareas\n• Establece fechas límite realistas\n• Divide tareas grandes en subtareas\n• Revisa tu lista diariamente\n• Celebra cuando completes tus tareas');
-}
-
-// Add AOS (Animate On Scroll) initialization if you include the library
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize animations if AOS library is loaded
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 600,
-            easing: 'ease-out-cubic',
-            once: true
-        });
-    }
-});
-</script>
 {% endblock content %}
